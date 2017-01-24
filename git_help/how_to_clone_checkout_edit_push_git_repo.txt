@@ -1,0 +1,66 @@
+## Steps to INITIALLY checkout, change, and push changes to CIRN Github
+
+# Go to the location on your local machine where you want to put the repository
+$ cd your/development/folder
+
+# Clone the most updated repository to your local machine
+$ git clone https://github.com/Coastal-Imaging-Research-Network/cBathy-Toolbox.git 
+OR 
+$ git clone https://github.com/Coastal-Imaging-Research-Network/UAV-Processing-Toolbox.git 
+
+## CHOOSE OPTION (A) or (B) depending on your goal: 
+
+# (A) Checkout the master for a most recent release to run the code
+$ git checkout master 
+# run code as you’d like
+
+# (B) Checkout the Development branch to add your features or make edits to existing development code 
+$ git checkout development 
+
+# Make your own branch for editing
+$ git branch your_branch_name
+$ git checkout your_branch_name
+ 
+# Check to make sure you’re editing your branch
+$ git branch -v 
+
+# Add files to git version control
+git add new_file.txt
+
+# commit your changes locally (to be able to come back to that point at any time)
+$ git commit -a -m ’Describe your changes’
+
+# Once you are satisfied with all your changes, PUSH your branch to the online repository
+git push origin your_branch_name
+ 
+
+## IF already cloned previously and made your own branch, DO THIS  
+
+# Checkout your most recent version
+$ git checkout your_branch_name
+ 
+# Check to make sure you’re editing your branch
+$ git branch -v 
+
+# Add files to git version control
+$ git add new_file.txt
+
+# commit your changes locally (to be able to come back to that point at any time)
+$ git commit -a -m ’Describe your changes’
+
+# Once you are satisfied with all your changes, PUSH your branch to the online repository
+$ git push origin your_branch_name
+ 
+## NOW you think your changes are worthy to be merged to the development branch 
+- Go to the code tab of the GitHub repository (https://github.com/Coastal-Imaging-Research-Network/cBathy-Toolbox)
+- change the working branch to your_branch_name
+- click “New pull request”
+- change base branch to “development”
+- edit description of your changes and WHY your code should be merged
+- click “create pull request” 
+- wait for an admin to approve your request or request further information
+
+
+
+
+
